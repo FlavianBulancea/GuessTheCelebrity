@@ -1,7 +1,11 @@
 ﻿# GuessTheCelebrity
-simply open the project,
-when u first hit the start button it will take longer to create names and links (5 min),
-then everything will run immediately,
-click update whenever you want to rework the names and links,
+Opening the app for the first time will take longer (~ 5 min).
+Update button will reproccess required information from imdb.
 
-the app is working with top 100 imdb celebrities
+Walking through
+
+The app has a single activity, proccessing, saving and displaying data.
+DownloadTask extending AsyncTask is the main proccess used to collect information from https://www.imdb.com/list/ls052283250/, 
+using patterns.
+Furthermore the application creates an interface in which we can choose celebrities according to an image with a simple counter.
+Data is saved using SharedPreferences variables.
